@@ -1,0 +1,24 @@
+/*================================================ Mobile*/
+.accountNavBar{
+    display: flex;
+    justify-content: space-around; /*Centrado horizonal*/
+    align-items: center; /*Centrado vertical*/
+    padding: 0.5vw;
+    background-color: white;
+    border-bottom: 1px solid #777777;
+}
+.accountNavBar a{
+    text-decoration: none;
+    color: #777777;
+}
+.anv_icon{
+    font-size: 4vw;
+    color: #777777;
+}
+
+/*================================================ Desktop*/
+@media(min-width: 769px){/*1024*/
+    .anv_icon{
+        font-size: 1.3vw;
+    }
+}

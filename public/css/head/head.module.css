@@ -1,0 +1,44 @@
+.header{
+    display: flex;
+    justify-content: center; /*Centrado horizonal*/
+    align-items: center; /*Centrado vertical*/
+    background-color: #424242;
+    z-index: 2;
+    flex-wrap: wrap;
+}
+.fa-dice-d20{
+    display: block;
+    font-size: 30px;
+    color: white;
+    padding: 5px;
+}
+.indexMobileHeaderRight{
+    flex-grow: 1;/*Ocupa el resto del ancho*/
+    padding: 0px 20px; /*0px arriba y abajo; y 20px a los lados*/
+}
+.indexMobileSearch{
+    background-color: white;
+    border-radius: 5px;
+    padding: 3px;
+
+    display: flex;
+    justify-content: flex-start; /*Centrado horizonal*/
+    align-items: center; /*Centrado vertical*/
+}
+.fa-search{
+    display: block;
+    width: fit-content;
+    color: #C6B6B6;
+    font-size: 10px;
+}
+.indexMobileForm{
+    display: block;
+    flex-grow: 1; /*Ocupa el resto del ancho*/
+
+    display: flex;
+}
+.indexMobileInput{
+    flex-grow: 1; /*Ocupa todo el ancho*/
+    border: none;
+    font-size: 10px;
+}

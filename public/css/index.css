@@ -1,0 +1,209 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'ubisoftsans-bold', sans-serif;
+}
+/*=====================================================================================IndexMobile.css*/
+.header{
+    display: flex;
+    justify-content: center; /*Centrado horizonal*/
+    align-items: center; /*Centrado vertical*/
+    background-color: #424242;
+    z-index: 2;
+    flex-wrap: wrap;
+}
+.fa-dice-d20{
+    display: block;
+    font-size: 30px;
+    color: white;
+    padding: 5px;
+}
+.indexMobileHeaderRight{
+    flex-grow: 1;/*Ocupa el resto del ancho*/
+    padding: 0px 20px; /*0px arriba y abajo; y 20px a los lados*/
+}
+.indexMobileSearch{
+    background-color: white;
+    border-radius: 5px;
+    padding: 3px;
+
+    display: flex;
+    justify-content: flex-start; /*Centrado horizonal*/
+    align-items: center; /*Centrado vertical*/
+}
+.fa-search{
+    display: block;
+    width: fit-content;
+    color: #C6B6B6;
+    font-size: 10px;
+}
+.indexMobileForm{
+    display: block;
+    flex-grow: 1; /*Ocupa el resto del ancho*/
+
+    display: flex;
+}
+.indexMobileInput{
+    flex-grow: 1; /*Ocupa todo el ancho*/
+    border: none;
+    font-size: 10px;
+}
+
+/*=====================================================================================VerticalNavigation.css*/
+.verticalNavigation{
+    display: flex;
+    width: 100%;
+    background-color: #777777;
+    justify-content: space-around; /*Centrado horizonal*/
+    align-items: center; /*Centrado vertical*/
+    padding: 1%;
+}
+.verticalNavigation a{
+    color: white;
+    display: block;
+}
+.verticalNavigation a:hover{
+    color: #9AD5D4;
+}
+
+/*-------------------------------------------------------------------------------------*/
+.main{
+    box-sizing: border-box; /*Con esto, ni el ancho ni el alto del div varían al agregar relleno y/o borde*/
+    padding: 7px;
+
+    background-color: #f2f2f2;
+}
+/*-------------------------------------------------------------------------------------*/
+.footer{
+    box-sizing: border-box; /*Con esto, ni el ancho ni el alto del div varían al agregar relleno y/o borde*/
+    position: fixed; /*Al poner fixed, el ancho del div es el ancho del contenido*/
+    width: 100%;
+    padding: 5px;
+    bottom: 0;
+
+    background-color: rgba(119,119,119,0.8);
+    z-index: 2;
+}
+.indexMobileNav{
+    display: flex;
+    justify-content: space-around; /*Centrado horizonal*/
+    align-items: center; /*Centrado vertical*/
+}
+.indexMobileNavA{
+    display: block;
+}
+.indexMobileNavA a i:hover{
+    color: #777777;
+}
+a{ /*.fa-home, .fa-user, .fa-shopping-cart, .fa-bars*/
+    color: white;
+    font-size: 20px;
+}
+a:hover{
+    color: #99D2CE;
+}
+
+/*=====================================================================================HomeMobile.css*/
+
+.homeMobileBanner{
+    margin: 20px 0px;
+    width: 100%;
+}
+.homeMobileTitle{
+    font-size: 15px;
+    font-weight: bolder;
+    margin: 0px 0px 5px 0px;
+}
+.homeMobileContent{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #F1F3F4;
+    box-sizing: border-box;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    padding: 5px;
+}
+
+/*=====================================================================================Item.css*/
+
+.item{
+    position: relative;
+    display: block;
+    width: 30%;
+    margin: 8px 0px;
+}
+.item:before{
+    content: '';
+    display: block;
+    padding-bottom: 120%;
+}
+.itemImg{
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.itemPrice{
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    right: 0;
+
+    font-size: 3vw;
+    background-color: rgba(0,0,0,0.8);  
+    border-radius: 4px;
+    padding: 3px;
+    text-align: right;
+}
+.itemName{
+    box-sizing: border-box;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+
+    width: 100%;
+    border-radius: 8px 8px 0px 0px;
+    text-align: center;
+    padding: 3px;
+    background-color: rgba(70, 105, 154,0.9);
+    font-size: 3vw;
+
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+
+}
+.item i{
+    position: absolute;
+    z-index: 1;
+    bottom: 1vw;
+    left: 1vw;
+    font-size: 3vw;
+    background-color: rgba(13, 183, 166, 0.7);
+    padding: 2vw;
+    border-radius: 50%;
+}
+
+/*===================MEDIA QUERIES*/
+@media (min-width: 360px) {/*Navegación mobile*/
+    .verticalNavigation{
+        display: none; /*display: block;*/
+    }
+    .footer{
+        display: block;
+    }
+}
+
+@media (min-width: 769px) {/*Navegación en desktop*/
+    .footer{
+        display: none;
+    }
+    .verticalNavigation{
+        display: flex;
+    }
+}

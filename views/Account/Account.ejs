@@ -1,0 +1,14 @@
+<%- include('../AccountNavBar/AccountNavBar') %>
+
+<% if(accountView === 'configuration'){ %>
+    <%- include('../Configuration/Configuration') %>
+<% } %>
+<% if(accountView === 'myproducts'){ %>
+    <%- include('../MyProducts/MyProducts') %>
+<% } %>
+<% if(accountView === 'new'){ %>
+    <%- include('../NewProduct/NewProduct') %>
+<% } %>
+<% if(accountView === 'edit'){ %>
+    <%- include('../EditProduct/EditProduct') %>
+<% } %>

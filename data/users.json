@@ -1,0 +1,153 @@
+[
+ {
+  "id": "u1",
+  "avatar": "https://img.freepik.com/foto-gratis/retrato-modelo-sonriente-hermoso-hombre-negocios-inconformista-que-lleva-ropa-blanca-casual-verano_158538-919.jpg?size=626&ext=jpg&ga=GA1.2.1935130400.1630800000",
+  "firstname": "Arturo1",
+  "lastname": "Montes",
+  "email": "arturomontes@gmail.com",
+  "password": "abc12345",
+  "rol": "1"
+ },
+ {
+  "id": "u2",
+  "firstname": "Jimena",
+  "lastname": "Sanchez",
+  "email": "jimenasanchez@gmail.com",
+  "password": "abc1234",
+  "rol": 2,
+  "avatar": "https://www.sarastudio.com/wp-content/uploads/Cursos_Modelo-profesional.png"
+ },
+ {
+  "id": "u3",
+  "firstname": "Jimena",
+  "lastname": "Sanchez",
+  "email": "xxx@xxx.com",
+  "password": "12345",
+  "rol": 2,
+  "avatar": "https://www.sarastudio.com/wp-content/uploads/Cursos_Modelo-profesional.png"
+ },
+ {
+  "id": "u4",
+  "firstname": "fsdfsdfdsf",
+  "lastname": "erererere",
+  "email": "yogat34727@cyadp.com",
+  "password": "cacaca123",
+  "rol": "1",
+  "avatar": ""
+ },
+ {
+  "id": "u5",
+  "firstname": "hashed",
+  "lastname": "erererere",
+  "email": "assdsadsad@gmail.com",
+  "password": "$2b$10$O9rY1yenGEplzmmglIr9Dewqp1dT2/pvM/aRPLfzRVy6E46Lj7OHq",
+  "rol": "1",
+  "avatar": ""
+ },
+ {
+  "id": "u6",
+  "firstname": "passwordhashed",
+  "lastname": "a",
+  "email": "passcacaca@gmail.com",
+  "password": "$2b$10$mEKXtmd4v/ciPxkHOJrNOuRbj5NXjYMQfMdxNQJ6T9XrE0HU90ZY6",
+  "rol": "1",
+  "avatar": ""
+ },
+ {
+  "id": "u7",
+  "firstname": "hashed",
+  "lastname": "dos",
+  "email": "cacaca@mail.com",
+  "password": "$2b$10$BEf/NmW0q3XtNAjrl3rnZ.TPwlS2LM72KiisYzyA605SUyNk0rWTC",
+  "rol": "1",
+  "avatar": ""
+ },
+ {
+  "id": "u8",
+  "firstname": "multer",
+  "lastname": "a",
+  "email": "multer@mail.com",
+  "password": "$2b$10$C0PZ3OyuPdB9OzIecaV0AehxWG/vuUYEIAyy5KloZ6CjT88d.wIL.",
+  "rol": "1"
+ },
+ {
+  "id": "u9",
+  "firstname": "multer",
+  "lastname": "a",
+  "email": "multer2@mail.com",
+  "password": "$2b$10$mZ1et4GuSDUYRl4f6whvjO1jJZlYutZ5Xy9w9pBKfgFmmuBOOg8jS",
+  "rol": "1"
+ },
+ {
+  "id": "u10",
+  "firstname": "multer3",
+  "lastname": "erererere",
+  "email": "multer3@mail.com",
+  "password": "$2b$10$PvOQ8zLr9Vr3tlLP3M1nwebNEsgEyf5/lQx3iiB2ZvYUwWumpbieG",
+  "rol": "1",
+  "avatar": "avatar-1638353516891"
+ },
+ {
+  "id": "u11",
+  "firstname": "multer4",
+  "lastname": "erererere",
+  "email": "multer4@mail.com",
+  "password": "$2b$10$jtuRCWUb1VibXb1Gu8YEl.Gz6me/oW/VZM449KPlBZb35BVja8yHa",
+  "rol": "1",
+  "avatar": "avatar-1638353629544"
+ },
+ {
+  "id": "u12",
+  "firstname": "multer5",
+  "lastname": "erererere",
+  "email": "multer5@mail.com",
+  "password": "$2b$10$9VvUFhuF/MCniLpoEY5Jfe/UlTE.LYKlbBl7iWUXg2aJfhVeTiWaq",
+  "rol": "1",
+  "avatar": "avatar-1638353678432"
+ },
+ {
+  "id": "u13",
+  "firstname": "multer3",
+  "lastname": "erererere",
+  "email": "multer3@mail.com",
+  "password": "$2b$10$zL0xDJa/bUmmNrbFZ3iOn.SgQRubw6qPRnGEvYutcdm.8Omf/C7VS",
+  "rol": "1",
+  "avatar": "avatar-1638354038479"
+ },
+ {
+  "id": "u14",
+  "firstname": "multer3",
+  "lastname": "erererere",
+  "email": "multer4@mail.com",
+  "password": "$2b$10$WnlmPDDXLckcoo7dVBNHoeqDcIxFP7nShUeThuvGd3rR22C.nKgwu",
+  "rol": "1",
+  "avatar": "avatar-1638354181812"
+ },
+ {
+  "id": "u15",
+  "firstname": "multer3",
+  "lastname": "erererere",
+  "email": "multer5@mail.com",
+  "password": "$2b$10$/S7a/RCREk8V2uB5szOmVezXyZ8u7v5m1ukH9KwcuBDEQgwiJOnIW",
+  "rol": "1",
+  "avatar": "avatar-1638354238249"
+ },
+ {
+  "id": "u16",
+  "firstname": "multer3",
+  "lastname": "erererere",
+  "email": "multer6@mail.com",
+  "password": "$2b$10$TJuOZXNrH9uT16EFAr4BV.2GYinRVz6m1lrx.7jUPKWrksNjlAQ9q",
+  "rol": "1",
+  "avatar": "avatar-1638354286610"
+ },
+ {
+  "id": "u17",
+  "firstname": "multer6",
+  "lastname": "a",
+  "email": "multer6@mail.com",
+  "password": "$2b$10$qeaPs8oxds5b9p.mWB6Yc.y9a0UzU1razsLEvRxLAi/D5MSbB5H7K",
+  "rol": "1",
+  "avatar": "avatar-1638354351600.PNG"
+ }
+]
