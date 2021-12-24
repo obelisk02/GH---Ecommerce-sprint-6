@@ -1,6 +1,6 @@
 
 
-# Sprint 2: GamingHouse HTML
+# Sprint 5: GamingHouse HTML
 
 _El enfoque del e-commerce de este equipo es la venta de productos novedosos de tecnologia 
 haciendo mas incapie en equipos de computacion, hardware y herramientas digitales._
