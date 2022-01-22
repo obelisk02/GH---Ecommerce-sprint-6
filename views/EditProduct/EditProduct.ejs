@@ -1,0 +1,39 @@
+<div class="NewP-container">
+    <form action="/account/myproducts/edit/<%= product.id %>?_method=PATCH" method="POST">
+        <label for="section" class="NewP-text">Sección: </label>
+        <select name="section" id="section" class="NewP-area">
+            <option value="1" <%if(product.section===1){%>selected<%}%>>Monitor</option>
+            <option value="2" <%if(product.section===2){%>selected<%}%>>Audífono</option>
+            <option value="3" <%if(product.section===3){%>selected<%}%>>Teclado</option>
+            <option value="4" <%if(product.section===4){%>selected<%}%>>Mouse</option>
+            <option value="5" <%if(product.section===5){%>selected<%}%>>Bocina</option>
+        </select>
+        <br/><br/>
+        <label for="name" class="NewP-text">Nombre: </label>
+        <input type="text" id="name" name="name" placeholder="Nombre del producto" value="<%= product.name %>" class="NewP-area">
+        <br/><br/>
+        <label for="desc" class="NewP-text">Descripción: </label>
+        <textarea id="desc" name="desc" placeholder="Descripción del producto" class="NewP-area"><%= product.desc %></textarea>
+        <br/><br/>
+        <label for="mark" class="NewP-text">Marca: </label>
+        <input type="text" id="mark" name="mark" placeholder="Marca del producto" value="<%= product.mark %>" class="NewP-area">
+        <br/><br/>
+        <label for="price" class="NewP-text">Precio: </label>
+        <input type="number" id="price" name="price" min="1" placeholder="Precio del producto" value="<%= product.price %>" class="NewP-area">
+        <br/><br/>
+
+        <div class="NewP-fila">
+            <div class="NewP-column">
+                <label for="img" class="NewP-text">Imágen: </label>
+                <label class="NewP-button-image">
+                    <input type="file" id="img" name="img" accept=".jpg" >
+                </label>
+            </div>
+            <div class="NewP-column">
+                <img id="blah" src="<%= product.img %>" alt="your image" class="NewP-image"/>
+            </div>
+        </div>
+        <br/><br/> <br/><br/>     
+        <button type="submit" class="NewP-button">Guardar producto</button>
+    </form>
+</div>

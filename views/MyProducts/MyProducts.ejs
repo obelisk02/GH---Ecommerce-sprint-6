@@ -1,0 +1,11 @@
+<div class="myproductsContent">
+    <% userProducts.forEach(product => { %>
+        <% id= product.id; %>
+        <% name= product.name; %>
+        <% img= product.img; %>
+        <% price= product.price; %>
+        <%- include('../ProductUserCard/ProductUserCard') %>
+    <% }); %>
+</div>
+
+<a href="/account/myproducts/new"><button class="ac_button"><i class="fas fa-plus ac_icon"></i></button></a>

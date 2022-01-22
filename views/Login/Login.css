@@ -1,0 +1,255 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'ubisoftsans-bold', sans-serif;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: center; /*Centrado horizonal*/
+    align-items: center; /*Centrado vertical*/
+    background-color: #424242;
+    z-index: 2;
+    flex-wrap: wrap;
+}
+
+body{
+    background-color: #f2f2f2;
+    background-image: url(/images/login.jpeg);
+    height: fit-content;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo i {
+    font-size: 30px;
+    color: white;
+    padding: 5px;
+}
+
+.slider {
+    display: none;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 15%;
+    align-items: center;
+    text-align: center;
+    height: 70%;
+    width: 70%;
+    background-color: #f2f2f2;
+    border: 2px solid #bb5b0c;
+    border-radius: 5px;
+}
+
+    h2 {
+        width: 100%;
+        padding: 20px 0px;
+        text-decoration: underline;
+}
+
+    h3 {
+        text-align: left;
+        padding: 10px 0px 10px 10%;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    form input{
+        align-items: center;
+        margin: 10px 20px;
+    }
+
+    .recordar label{
+        font-size: 11px;
+    }
+
+    main input[type='submit']{
+        color: #fff;
+        background-color: #bb5b0c;
+        border: 1px solid #000;
+        border-radius: 0.5em;
+        outline: none;
+        padding: 5px 10px;
+        text-align: center;
+      } 
+    
+      main input[type='submit']:hover{
+        background-color: #bb3e0c;
+      }  
+
+      main a {
+        color: #bb5b0c;
+        font-size: 11px;
+        margin-left: 20px;
+      }
+
+      main a:hover{
+          color: #bb3e0c;
+      }
+
+      .tipo-ingreso {
+          width: 100%;
+      }
+
+      .tipo-ingreso h3{
+          text-align: left;
+          padding: none;
+      }
+
+      .comprador {
+            margin: 10px 30px;
+            text-align: left;
+            width: 100%;
+      }
+
+      .vendedor {
+        margin: 10px 30px;
+        text-align: left;
+        width: 100%;
+  }
+
+        .opciones{
+      text-align: left;
+      position: relative;
+      left: 10px;
+  }
+
+        .opciones a{
+      text-decoration: underline;
+      font-size: 11px;
+      margin-right: 15px;
+  }
+
+        .opciones a:hover{
+            color: #bb3e0c;
+}
+
+        .footer{
+    box-sizing: border-box; /*Con esto, ni el ancho ni el alto del div varían al agregar relleno y/o borde*/
+    position: fixed; /*Al poner fixed, el ancho del div es el ancho del contenido*/
+    width: 100%;
+    padding: 5px;
+    bottom: 0;
+
+    background-color: rgba(119,119,119,0.8);
+    z-index: 2;
+}
+        .indexMobileNav{
+    display: flex;
+    justify-content: space-around; /*Centrado horizonal*/
+    align-items: center; /*Centrado vertical*/
+}
+        .indexMobileNavA{
+    display: block;
+}
+        .indexMobileNavA a i:hover{
+    color: #777777;
+}
+        .indexMobileNav a{ /*.fa-home, .fa-user, .fa-shopping-cart, .fa-bars*/
+    color: white;
+    font-size: 20px;
+}
+        a:hover{
+    color: #99D2CE;
+}
+
+/*===================MEDIA QUERIES*/
+@media (min-width: 425px) {/*Navegación mobile*/
+    /*form{
+        margin-left: 8%;
+    }*/
+
+    main input[type='text']{
+        width: 70%;
+        margin: 10px 10%;
+    } 
+
+    main input[type='password']{
+        width: 70%;
+        margin: 10px 10%;
+    } 
+
+    .footer{
+        display: block;
+    }
+}
+
+@media (min-width: 769px) {/*Navegación en desktop*/
+    body{
+        background-color: #000;
+        background-image: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-items: center;
+        align-items: center;
+    }
+
+    header{
+        width: 100%;
+    }
+
+    .slider {
+        padding-top: 15%;
+        display: block;
+        height: 100%;
+        width: 50%;
+        position: center;
+        size: cover;
+        overflow: hidden;
+    }
+
+    .slider ul {
+        display: flex;
+        padding: 0;
+        width: 600%;
+        animation: cambio 50s infinite alternate;
+        animation-direction: ease-in;
+    }
+
+    .slider li {
+        width: 100%;
+        list-style: none;
+    }
+
+    .slider img {
+        width: 100%;
+    }
+
+    @keyframes cambio {
+        0% {margin-left: 0;}
+        5% {margin-left: 0;}
+        
+        10% {margin-left: -100%;}
+        15% {margin-left: -100%;}
+
+        20% {margin-left: -200%;}
+        25% {margin-left: -200%;}
+
+        30% {margin-left: -300%;}
+        35% {margin-left: -300%;}
+
+        40% {margin-left: -400%;}
+        45% {margin-left: -400%;}
+
+        50% {margin-left: -500%;}
+        55% {margin-left: -500%;}
+    }
+    
+    main {
+        margin: 0%;
+        align-items: inherit;
+        height: 100%;
+        width: 50%;
+    }
+
+    .footer{
+        display: none;
+    }
+}

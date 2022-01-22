@@ -1,0 +1,30 @@
+/*================================================ Mobile*/
+.home{
+    height: 100vh;
+    overflow: auto;
+    background-color: #f3f4f6;
+}
+.h_header{
+    position: sticky;
+    top: 0;
+    background-color: #3e4854;
+}
+.h_navBar{
+    display: none;
+}
+.h_footer{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: rgba(62, 72, 84, 0.9);
+}
+
+/*================================================ Desktop*/
+@media(min-width: 769px){/*1024*/
+    .h_navBar{
+        display: block;
+    }
+    .h_footer{
+        display: none;
+    }
+}

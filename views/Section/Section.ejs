@@ -1,0 +1,44 @@
+<div class="section">
+    <div class="s_tittle"><%= section %></div>
+    <div class="s_filter">
+        <div class="sf_content">
+            <div class="sfc_tittle">Precio</div>
+            <div class="sfc_content">
+                <a class="sfct_filterItem" href="/section/<%= id %>/pf/100">$100 o menos</a>
+                <a class="sfct_filterItem" href="/section/<%= id %>/pf/500">$500 o menos</a>
+                <a class="sfct_filterItem" href="/section/<%= id %>/pf/1000">$1000 o menos</a>
+                <a class="sfct_filterItem" href="/section/<%= id %>/pf/10000">$10000 o menos</a>
+                <a class="sfct_filterItem" href="/section/<%= id %>/pf/50000">$50000 o menos</a>
+            </div>
+        </div>
+        <div class="sf_content">
+            <div class="sfc_tittle">Marca</div>
+            <div class="sfc_content">
+                <% marks.forEach(mark => { %>
+                    <a class="sfct_filterItem" href="/section/<%= id %>/mf/<%= mark %>"><%= mark %></a>
+                <% }); %>
+            </div>
+        </div>
+        <div class="sf_content">
+            <div class="sfc_tittle">Calificación</div>
+            <div class="sfc_content">
+                <a class="sfct_filterItem star" href="/section/<%= id %>/rf/1"><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></a>
+                <a class="sfct_filterItem star" href="/section/<%= id %>/rf/2"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></a>
+                <a class="sfct_filterItem star" href="/section/<%= id %>/rf/3"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></a>
+                <a class="sfct_filterItem star" href="/section/<%= id %>/rf/4"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></a>
+                <a class="sfct_filterItem star" href="/section/<%= id %>/rf/5"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="s_itemsContent">
+        <% sectionProducts.forEach(product => { %>
+            <% id= product.id; %>
+            <% name= product.name; %>
+            <% img= product.img; %>
+            <% sales= product.sales; %>
+            <% stars= product.stars; %>
+            <% price= product.price; %>
+            <%- include('../HomeContentCard/HomeContentCard') %>
+        <% }); %>
+    </div>
+</div>

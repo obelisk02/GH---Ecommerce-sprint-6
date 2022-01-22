@@ -1,0 +1,29 @@
+<a href="/account/myproducts/edit/<%=id%>" class="productUserCardA">
+    <div class="productUserCard">
+        <div class="puc_top">
+            <div class="puct_l">
+                <span><%= name %></span>
+            </div>
+            <div class="puct_r">
+                <form action="/account/myproducts/delete/<%= id %>?_method=DELETE" method="POST">
+                    <button class="puct_button">
+                        <i class="fas fa-trash puct_icon"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+        <div class="puc_bottom">
+            <div class="pucb_l">
+                <div style="background-image: url(<%=img%>)" class="pucbl_img"></div>
+            </div>
+            <div class="pucb_r">
+                <div class="pucbr_a">
+                    Descripción larga
+                </div>
+                <div class="pucbr_c">
+                    $ <%=price%>
+                </div>
+            </div>
+        </div>
+    </div>
+</a>

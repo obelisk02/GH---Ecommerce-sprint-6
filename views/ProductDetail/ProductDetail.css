@@ -1,0 +1,399 @@
+/*html {
+  font-size: 62.5%;
+} 
+
+ {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+}
+
+*/
+
+.ProDet-box,
+.ProDet-box-container .ProDet-p,
+.ProDet-content,
+.ProDet-image-container .ProDet-span .ProDet-big-image,
+.ProDet-todo {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+}
+
+/*
+.ProDet-box {
+  font-size: 62.5% !important;
+} */
+
+.ProDet-price {
+  color: #12b104 !important;
+  font-weight: bold;
+}
+.ProDet-box-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 1vh;
+  background: #ccc;
+}
+
+.ProDet-box-container .ProDet-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  /*width: 90rem; */
+  padding: 1rem;
+  margin: 2rem;
+  box-shadow: 0 0.3rem 0.5rem #3337;
+}
+
+.ProDet-box-container .ProDet-box .ProDet-image-container {
+  text-align: center;
+  padding: 1rem 2rem;
+}
+
+.ProDet-box-container .ProDet-box .ProDet-image-container .ProDet-big-image {
+  box-shadow: 0 0.1em 0.5rem #3337;
+  border: 0.5rem solid #fff;
+  padding: 2rem 1rem;
+  background: rgb(255, 255, 255);
+}
+
+.ProDet-box-container
+  .ProDet-box
+  .ProDet-image-container
+  .ProDet-big-image
+  .ProDet-img {
+  height: 25rem;
+}
+
+.ProDet-box .ProDet-image-container .ProDet-small-image {
+  padding: 1rem 0;
+}
+
+.ProDet-box-container
+  .ProDet-box
+  .ProDet-image-container
+  .ProDet-small-image
+  .ProDet-img {
+  box-shadow: 0 0.3rem 0.5rem #3337;
+  border: 0.5rem solid #fff;
+  padding: 1rem;
+  background: #eee;
+  margin: 1rem;
+  height: 8rem;
+  cursor: pointer;
+}
+
+.ProDet-box-container
+  .ProDet-box
+  .ProDet-image-container
+  .ProDet-small-image
+  .ProDet-img.active,
+.ProDet-box-container
+  .ProDet-box
+  .ProDet-image-container
+  .ProDet-small-image
+  .ProDet-img:hover {
+  background: #cccc;
+}
+
+.ProDet-box-container .ProDet-box .ProDet-content {
+  padding: 1rem;
+}
+
+.ProDet-box-container .ProDet-box .ProDet-content .ProDet-title {
+  font-size: 3rem;
+  color: #333;
+  padding: 1rem 0;
+  text-transform: uppercase;
+}
+.ProDet-title {
+  font-size: 2rem !important;
+}
+
+.ProDet-box-container .ProDet-box .ProDet-content .ProDet-price {
+  color: #333;
+  border-top: 0.2rem solid #333;
+  border-bottom: 0.2rem solid #333;
+  font-size: 2rem;
+  padding: 0.5rem;
+  display: inline-block;
+}
+
+.ProDet-box-container .ProDet-box .ProDet-content .ProDet-p {
+  padding: 1rem 0;
+  font-size: 1rem;
+  color: #666;
+}
+
+.ProDet-box-container
+  .ProDet-box
+  .ProDet-content
+  .ProDet-form
+  .ProDet-dropDown
+  .ProDet-span {
+  font-size: 1rem;
+  display: block;
+  color: #333;
+  padding: 1rem 0;
+}
+
+.ProDet-box-container .ProDet-box .ProDet-content .ProDet-form .ProDet-dropDown,
+.ProDet-select {
+  width: 97%;
+  height: 3rem;
+  font-size: 1rem;
+  color: #666;
+}
+
+.ProDet-box-container
+  .ProDet-box
+  .ProDet-content
+  .ProDet-form
+  .ProDet-quantity {
+  padding: 2rem 0;
+}
+.ProDet-quantity {
+  padding: 2vh 0;
+}
+
+.ProDet-box-container
+  .ProDet-box
+  .ProDet-content
+  .ProDet-form
+  .ProDet-quantity
+  .ProDet-span {
+  font-size: 1rem;
+  color: #333;
+}
+
+.ProDet-box-container
+  .ProDet-box
+  .ProDet-content
+  .ProDet-form
+  .ProDet-quantity {
+  height: 3rem;
+  width: 6rem;
+  text-align: center;
+  font-size: 1rem;
+  color: #666;
+  margin: 0 1rem;
+}
+
+.ProDet-input {
+  height: 3rem;
+  width: 6rem;
+  text-align: center;
+  font-size: 1rem;
+  color: #666;
+  margin: 0 1rem;
+}
+
+.ProDet-box-container .ProDet-content .ProDet-btn {
+  height: 3rem;
+  width: 10rem;
+  background: #333;
+  color: #fff;
+  margin-right: 1rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.ProDet-box-container .ProDet-box .ProDet-content .ProDet-btn:hover {
+  background: #666;
+}
+
+.ProDet-box-container .ProDet-box .ProDet-content .ProDet-stock {
+  color: #666;
+  font-size: 1rem;
+}
+
+.ProDet-box-container .ProDet-box .ProDet-content .ProDet-stock .ProDet-i {
+  color: green;
+}
+
+.ProDet-i {
+  font-size: larger;
+}
+
+.ProDet-box-container .ProDet-content .ProDet-share {
+  padding: 2rem 0;
+}
+
+.ProDet-box-container .ProDet-box .ProDet-content .ProDet-share .ProDet-a {
+  color: #333;
+  border: 0.1rem solid #666;
+  padding: 0.8rem 2rem;
+  margin: 0.5rem 0;
+  margin-right: 1rem;
+  font-size: 1rem;
+  display: inline-block;
+}
+
+.ProDet-box-container
+  .ProDet-box
+  .ProDet-content
+  .ProDet-share
+  .ProDet-a:hover {
+  color: #fff;
+  background: #666;
+}
+
+/* ESTRELLAS */
+
+#PrDe-stars {
+  padding-left: 1vw;
+  margin: 0.5rem 0;
+  margin-right: 1rem;
+  display: inline-block;
+  font-size: 2em;
+}
+
+/* Query */
+@media (max-width: 768px) {
+  #PrDe-stars {
+    font-size: 1.6rem;
+  }
+
+  .ProDet-title,
+  .ProDet-price {
+    font-size: 2.6rem !important;
+  }
+
+  .ProDet-box-container .ProDet-box {
+    flex-flow: column;
+  }
+
+  .ProDet-box-container
+    .ProDet-box
+    .ProDet-image-container
+    .ProDet-big-image
+    .ProDet-img {
+    height: auto;
+    width: 100%;
+  }
+}
+
+.ProDet-box {
+  max-width: 85vw;
+}
+
+@media (max-width: 400px) {
+  #PrDe-stars {
+    font-size: 1.2rem;
+  }
+
+  .ProDet-btn {
+    max-width: 28vw;
+  }
+  .ProDet-title,
+  .ProDet-price {
+    font-size: 2rem !important;
+  }
+
+  .ProDet-box-container
+    .ProDet-box
+    .ProDet-image-container
+    .ProDet-big-image
+    .ProDet-img {
+    height: auto;
+    width: 100%;
+  }
+}
+/* Query */
+
+/* cards */
+
+:root {
+  --white: #fff;
+  --gray-dark: #343a40;
+  --gray-light: #e1e1e1;
+  --light: #f8f9fa;
+  --dark: #343a40;
+  --blue-dark: #004c75;
+}
+
+.ProDet-content {
+  margin: 0 auto;
+}
+.ProDet-jumbotron {
+  width: 100%;
+  background: #e1233c;
+}
+
+.ProDet-products,
+.ProDet-jumbotron {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.ProDet-card {
+  margin: 16px 5px;
+  background: var(--white);
+  border-radius: 4px;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+}
+.ProDet-cardHeader {
+  padding: 16px;
+  border-bottom: 1px solid var(--gray-light);
+}
+.ProDet-imageProduct {
+  width: 100%;
+}
+.ProDet-imageJumbotron {
+  max-width: 992px;
+}
+.ProDet-cardContent {
+  padding: 16px;
+}
+.ProDet-product-card:hover {
+  box-shadow: 0 4px 30px var(--gray-light);
+}
+.ProDet-product-card {
+  max-width: 240px;
+  cursor: pointer;
+}
+
+/* Query */
+
+@media (max-width: 1187px) {
+  .ProDet-card {
+    flex-basis: 25%;
+  }
+}
+
+@media (max-width: 975px) {
+  .ProDet-card {
+    flex-basis: 40%;
+  }
+}
+
+@media (max-width: 600px) {
+  .ProDet-card {
+    flex-basis: 60%;
+  }
+}
+
+.ProDet-another-wrapper {
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 3vh;
+  padding-bottom: 1vh;
+}

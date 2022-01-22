@@ -1,0 +1,22 @@
+<a class="homeContentCard" href="/products/detail/<%=id%>/">
+    <% cardStyle = `background-image: url(${img})`; %>
+    <div style="<%= cardStyle %>" class="hcc_img"></div>
+    <div class="hcc_price">$ <%= price %></div>
+    <div class="hcc_stars">
+        <!--<i class="far fa-star"></i>
+        <i class="far fa-star"></i>
+        <i class="far fa-star"></i>
+        <i class="far fa-star"></i>
+        <i class="far fa-star"></i>-->
+        <%= stars %> estrellas
+    </div>
+    <div class="hcc_sells">
+        <%= sales %> vendidos
+    </div>
+    <div class="hcc_name">
+        <%= name %>
+    </div>
+    <button class="hcc_button">
+        Agregar al carrito
+    </button>
+</a>

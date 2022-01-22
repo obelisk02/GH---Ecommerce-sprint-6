@@ -1,11 +1,9 @@
 
 
-# Sprint 6: Equipo GamingHouse 
+# Sprint 2: GamingHouse HTML
 
 _El enfoque del e-commerce de este equipo es la venta de productos novedosos de tecnologia 
 haciendo mas incapie en equipos de computacion, hardware y herramientas digitales._
-
-### Demo
 
 
 ### Archivos 📋
@@ -31,5 +29,11 @@ sprint>
 ○ APP rutas express(app.js)
 ```
 
+_Ligas_
 
+```
+Trello>
+○ https://trello.com/b/OBZDEhCp/gaming-house
+```
 
+HOLA

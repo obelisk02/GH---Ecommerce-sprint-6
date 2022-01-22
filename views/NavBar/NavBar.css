@@ -1,0 +1,11 @@
+.navBar{
+    display: flex;
+    justify-content: space-around; /*Centrado horizonal*/
+    align-items: center; /*Centrado vertical*/
+    padding: 0.5vw;
+    background-color: #777777;
+}
+.nv_icon{
+    font-size: 1.3vw;
+    color: white;
+}

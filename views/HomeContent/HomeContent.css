@@ -1,0 +1,26 @@
+/*================================================ Mobile*/
+.hc_content{
+    margin: 3vw;
+    padding: 2vw;
+    border-radius: 1vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #BDF7F7;
+}
+.hcc_title{
+    width: 100%;
+    font-size: 5vw;
+    font-weight: bolder;
+    margin-bottom: 1.5vw;
+}
+/*================================================ Desktop*/
+@media(min-width: 769px){/*1024*/
+    .hc_content{
+        margin: 1vw;
+        padding: 1vw;
+    }
+    .hcc_title{
+        font-size: 1.5vw;
+    }
+}

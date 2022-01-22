@@ -1,0 +1,180 @@
+
+    <div class="ProDet-box-container">
+    
+        <div class="ProDet-box">
+    
+            <div class="ProDet-image-container">
+    
+                <div class="ProDet-big-image">
+                    <img src="<%= product.img %>" alt="" class="ProDet-img">
+                    <p class="ProDet-p">Ventas:<%= product.sales %></p>
+                </div>
+             
+                <!--
+                <div class="small-image">
+                    <img class="active" src="https://m.media-amazon.com/images/I/51qdkFhW8HL._AC_SX522_.jpg" alt="">
+                    <img src="https://m.media-amazon.com/images/I/41FiDeU-OpL._AC_SY355_.jpg" alt="">
+                     <img src="https://m.media-amazon.com/images/I/41FiDeU-OpL._AC_SY355_.jpg" alt="">  
+                </div> 
+                        -->
+            </div>
+    
+            <div class="ProDet-content">
+    
+                <h3 class="ProDet-title ProDet-todo"><%= product.name %></h3>
+                <div class="ProDet-price ProDet-todo"><%= product.price %>.00 </div> 
+                <span id="PrDe-stars" class="ProDet-todo"><%= product.stars %></span>
+                <p class="ProDet-p"><%= product.desc %></p>
+              
+    
+                <form action="" class="" >
+    
+                    <div class="ProDet-dropDown ">
+                        <span class="ProDet-span ProDet-todo"> Tipo : </span>
+                        <select name="" id="" class="ProDet-select ProDet-todo">
+                            <option value="-" class="ProDet-todo">6gb</option>
+                            <option value="-" class="ProDet-todo">1080</option>
+                            <option value="-" class="ProDet-todo">i5</option>
+                            <option value="-" class="ProDet-todo">cero</option>
+                        </select>
+                        <span class="ProDet-span ProDet-todo"> Color : </span>
+                        <select name="" id="" class="ProDet-select ProDet-todo">
+                            <option value="Blanco" class="ProDet-todo">Blanco</option>
+                            <option value="Azul" class="ProDet-todo">Azul</option>
+                            <option value="Negro" class="ProDet-todo">Negro</option>
+                        </select>
+                    </div>
+    
+                    <div class="ProDet-quantity ProDet-todo">
+                        <span class="ProDet-span ProDet-todo"> Cantidad : </span>
+                        <input type="number" value="1" class="ProDet-input ProDet-todo">
+                    </div>
+    
+                </form>
+    
+                <a href="#"><button class="ProDet-btn ProDet-todo"> <i class="fas fa-shopping-cart "></i> Agregar </button></a>
+                <span class="ProDet-stock ProDet-span ProDet-todo"> <i class="fas fa-check ProDet-i " class=" "></i> Disponible </span>
+                <div class="ProDet-share">
+                    <a href="#" class="ProDet-a ProDet-todo">f</a>
+                    <a href="#" class="ProDet-a ProDet-todo">t</a>
+                    <a href="#" class="ProDet-a ProDet-todo">i</a>
+                    <a href="#" class="ProDet-a ProDet-todo">p</a>
+                </div>
+    
+            </div>
+            
+        </div>
+    
+    </div>    
+    
+
+    
+        <div class="ProDet-sanother-wrapper">
+          <h1>Productos Sugeridos asd</h1>
+          <hr>
+          </div>
+        
+
+    <div class="ProDet-products">
+       
+        <!--     product -->
+            <div class="ProDet-card ProDet-product-card">
+              <div class="ProDet-cardHeader">
+                <img class="ProDet-imageProduct" src="https://m.media-amazon.com/images/I/51S6IQ2lGwL._AC_SX522_.jpg" alt="product" style="max-width: 28vw; max-height: 30vh;">
+              </div>
+              <div class="ProDet-cardContent">
+                <h1>$50.00</h1>
+                <h4>Razer DeathAdder Essential - Mouse gamer</h4>
+              </div>
+            </div>
+        <!--     product -->
+            <!--     product -->
+            <div class="ProDet-card ProDet-product-card">
+              <div class="ProDet-cardHeader">
+                <img class="ProDet-imageProduct" src="https://m.media-amazon.com/images/I/51S6IQ2lGwL._AC_SX522_.jpg" alt="product" style="max-width: 28vw; max-height: 30vh;">
+              </div>
+              <div class="ProDet-cardContent">
+                <h1>$ 50.00</h1>
+                <h3>Razer DeathAdder Essential - Mouse gamer</h3>
+              </div>
+            </div>
+        <!--     product -->
+            <!--     product -->
+            <div class="ProDet-card ProDet-product-card">
+              <div class="ProDet-cardHeader">
+                <img class="ProDet-imageProduct" src="https://m.media-amazon.com/images/I/51S6IQ2lGwL._AC_SX522_.jpg" alt="product" style="max-width: 28vw; max-height: 30vh;">
+              </div>
+              <div class="ProDet-cardContent">
+                <h1>$ 50.00</h1>
+                <h3>Razer DeathAdder Essential - Mouse gamer</h3>
+              </div>
+            </div>
+        <!--     product -->
+            <!--     product -->
+            <div class="ProDet-card ProDet-product-card">
+              <div class="ProDet-cardHeader">
+                <img class="ProDet-imageProduct" src="https://m.media-amazon.com/images/I/51S6IQ2lGwL._AC_SX522_.jpg" alt="product" style="max-width: 28vw; max-height: 30vh;">
+              </div>
+              <div class="ProDet-cardContent">
+                <h1>$ 50.00</h1>
+                <h3>Razer DeathAdder Essential - Mouse gamer</h3>
+              </div>
+            </div>
+        <!--     product -->
+          </div>
+    
+    
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <script>
+    
+    $(document).ready(function(){
+    
+        $('.small-image img').click(function(){
+    
+            $(this).addClass('active').siblings().removeClass('active');
+    
+            let image = $(this).attr('src');
+            $('.big-image img').attr('src',image);
+    
+        
+        });
+    
+    });
+
+    const sex = document.getElementById("PrDe-stars").innerHTML;
+
+document.getElementById("PrDe-stars").innerHTML = getStars(sex);
+
+function getStars(rating) {
+
+  // Round to nearest half
+  rating = Math.round(rating * 2) / 2;
+  let output = [];
+
+  // Append all the filled whole stars
+  for (var i = rating; i >= 1; i--)
+    output.push('<i class="fa fa-star" aria-hidden="true" style="color: gold; font-size: 1em;"></i>&nbsp;');
+
+  // If there is a half a star, append it
+  if (i == .5) output.push('<i class="fas fa-star-half-alt" aria-hidden="true" style="color: gold; font-size: 1em"></i>&nbsp;');
+
+  // Fill the empty stars
+  for (let i = (5 - rating); i >= 1; i--)
+    output.push('<i class="far fa-star" aria-hidden="true" style="color: grey; font-size: 1em"></i>&nbsp;');
+
+  return output.join('');
+
+}
+
+
+  
+    
+    </script>
+    
+    
+    
+    
+    
+    

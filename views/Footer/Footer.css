@@ -1,0 +1,10 @@
+.footer{
+    display: flex;
+    justify-content: space-around; /*Centrado horizonal*/
+    align-items: center; /*Centrado vertical*/
+    padding: 2vw;
+}
+.foo_icon{
+    font-size: 6vw;
+    color: white;
+}

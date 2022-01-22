@@ -1,0 +1,153 @@
+/*================================================ Mobile*/
+.productCarCard{
+    border-radius: 3vw;
+    padding: 2vw;
+    background-color: white;
+    margin-bottom: 3vw;
+}
+.pcc_top{
+    display: flex;
+    font-size: 4vw;
+    font-weight: bolder;
+    border-bottom: 0.1vw solid grey;
+    padding-bottom: 2vw;
+}
+.pcct_l{
+    display: flex;
+    align-items: center;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-right: 2vw;
+}
+.pcct_r{
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.pcct_button{
+    padding: 0;
+    border: none;
+    background-color: transparent;
+}
+.pcct_icon{
+    font-size: 5.5vw;
+    color: #C54F41;
+}
+.pcct_icon:hover{
+    cursor: pointer;
+    color: #D26E62;
+}
+.pcc_bottom{
+    padding-top: 2vw;
+    display: flex;
+}
+.pccb_l{
+    margin-right: 2.5vw;
+}
+.pccbl_img{
+    width: 22vw;
+    height: 22vw;
+    background-size: cover;
+    background-position: center center;
+    margin-bottom: 1vw;
+}
+.pccbl_controls{
+    display: flex;
+    align-items: center;
+    font-size: 4vw;
+}
+.pccblc_button{
+    width: 4vw;
+    height: 4vw;
+    padding: 0;
+    font-size: 3vw;
+    border: none;
+    border-radius: 50%;
+    background-color: #91B604;
+    color: white;
+}
+.pccblc_button:hover{
+    cursor: pointer;
+    background-color: #A2C520;
+}
+.pccblc_count{
+    flex-grow: 1;
+    text-align: center;
+}
+.pccb_r{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.pccbr_a{
+    font-size: 3.5vw;
+    font-weight: bolder;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.pccbr_b{
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    font-size: 2.5vw;
+}
+.pccbrb_setting{
+    flex-grow: 1;
+    text-align: center;
+}
+.pccbr_c{
+    font-size: 4vw;
+    font-weight: bolder;
+}
+
+/*================================================ Desktop*/
+@media(min-width: 769px){/*1024*/
+    .productCarCard{
+        border-radius: 1vw;
+        padding: 0.7vw;
+        margin-bottom: 1vw;
+    }
+    .pcc_top{
+        font-size: 1.2vw;
+        padding-bottom: 0.8vw;
+    }
+    .pcct_icon{
+        font-size: 2vw;
+    }
+    .pcc_bottom{
+        padding-top: 0.8vw;
+    }
+    .pccb_l{
+        margin-right: 0.8vw;
+    }
+    .pccbl_img{
+        width: 10vw;
+        height: 10vw;
+    }
+    .pccbl_controls{
+        font-size: 1.5vw;
+    }
+    .pccblc_button{
+        width: 2vw;
+        height: 2vw;
+        font-size: 1vw;
+    }
+    .pcct_l{
+        margin-right: 1vw;
+    }
+    .pccbr_a{
+        font-size: 1.4vw;
+    }
+    .pccbr_b{
+        font-size: 1vw;
+    }
+    .pccbr_c{
+        font-size: 1.5vw;
+    }
+}

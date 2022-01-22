@@ -1,0 +1,34 @@
+<div class="home">
+    <div class="h_header">
+        <%- include('../SearchBar/SearchBar') %>
+        <div class="h_navBar">
+            <%- include('../NavBar/NavBar') %>
+        </div>
+    </div>
+
+    <% if(view === 'home'){ %>
+        <%- include('../HomeContent/HomeContent') %>
+    <% } %>
+    <% if(view === 'car'){ %>
+        <%- include('../ProductCar/ProductCar') %>
+    <% } %>
+    <% if(view === 'detail'){ %>
+        <%- include('../ProductDetail/ProductDetail') %>
+    <% } %>
+    <% if(view === 'new'){ %>
+        <%- include('../NewProduct/NewProduct') %>
+    <% } %>
+    <% if(view === 'edit'){ %>
+        <%- include('../EditProduct/EditProduct') %>
+    <% } %>
+    <% if(view === 'section'){ %>
+        <%- include('../Section/Section') %>
+    <% } %>
+    <% if(view === 'account'){ %>
+        <%- include('../Account/Account') %>
+    <% } %>
+
+    <div class="h_footer">
+        <%- include('../Footer/Footer') %>
+    </div>
+</div>

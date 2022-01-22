@@ -1,0 +1,22 @@
+.myproductsContent{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.ac_button{
+    background-color: #1976D2;
+    border: none;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+    width: 3em;
+    height: 3em;
+}
+.ac_button:hover{
+    cursor: pointer;
+}
+.ac_icon{
+    font-size: 1vw;
+    color: white;
+}

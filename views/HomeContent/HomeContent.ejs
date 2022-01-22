@@ -1,0 +1,62 @@
+<div class="homeContent">
+    <div class="hc_content">
+        <span class="hcc_title">Top monitores</span>
+        <% topMonitors.forEach(monitor => { %>
+            <% id= monitor.id; %>
+            <% name= monitor.name; %>
+            <% img= monitor.img; %>
+            <% sales= monitor.sales; %>
+            <% stars= monitor.stars; %>
+            <% price= monitor.price; %>
+            <%- include('../HomeContentCard/HomeContentCard') %>
+        <% }); %>
+    </div>
+    <div class="hc_content">
+        <span class="hcc_title">Top audifonos</span>
+        <% topHeadphones.forEach(headphone => { %>
+            <% id= headphone.id; %>
+            <% name= headphone.name; %>
+            <% img= headphone.img; %>
+            <% sales= headphone.sales; %>
+            <% stars= headphone.stars; %>
+            <% price= headphone.price; %>
+            <%- include('../HomeContentCard/HomeContentCard') %>
+        <% }); %>
+    </div>
+    <div class="hc_content">
+        <span class="hcc_title">Top teclados</span>
+        <% topKeyboards.forEach(keyboard => { %>
+            <% id= keyboard.id; %>
+            <% name= keyboard.name; %>
+            <% img= keyboard.img; %>
+            <% sales= keyboard.sales; %>
+            <% stars= keyboard.stars; %>
+            <% price= keyboard.price; %>
+            <%- include('../HomeContentCard/HomeContentCard') %>
+        <% }); %>
+    </div>
+    <div class="hc_content">
+        <span class="hcc_title">Top mouses</span>
+        <% topMouse.forEach(mouse => { %>
+            <% id= mouse.id; %>
+            <% name= mouse.name; %>
+            <% img= mouse.img; %>
+            <% sales= mouse.sales; %>
+            <% stars= mouse.stars; %>
+            <% price= mouse.price; %>
+            <%- include('../HomeContentCard/HomeContentCard') %>
+        <% }); %>
+    </div>
+    <div class="hc_content">
+        <span class="hcc_title">Top bocinas</span>
+        <% topSpeakers.forEach(speaker => { %>
+            <% id= speaker.id; %>
+            <% name= speaker.name; %>
+            <% img= speaker.img; %>
+            <% sales= speaker.sales; %>
+            <% stars= speaker.stars; %>
+            <% price= speaker.price; %>
+            <%- include('../HomeContentCard/HomeContentCard') %>
+        <% }); %>
+    </div>
+</div>

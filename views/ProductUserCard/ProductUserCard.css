@@ -1,0 +1,119 @@
+/*================================================ Mobile*/
+.productUserCardA{
+    text-decoration: none;
+    color: black;
+}
+.productUserCard{
+    width: 40vw;
+    border-radius: 3vw;
+    padding: 2vw;
+    background-color: white;
+    margin: 3vw;
+}
+.puc_top{
+    display: flex;
+    font-size: 3.5vw;
+    font-weight: bolder;
+    border-bottom: 0.1vw solid grey;
+    padding-bottom: 2vw;
+}
+.puct_l{
+    display: flex;
+    align-items: center;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-right: 2vw;
+}
+.puct_r{
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.puct_button{
+    padding: 0;
+    border: none;
+    background-color: transparent;
+}
+.puct_icon{
+    font-size: 5vw;
+    color: #C54F41;
+}
+.puct_icon:hover{
+    cursor: pointer;
+    color: #D26E62;
+}
+.puc_bottom{
+    padding-top: 2vw;
+    display: flex;
+}
+.pucb_l{
+    margin-right: 2.5vw;
+}
+.pucbl_img{
+    width: 10vw;
+    height: 10vw;
+    background-size: cover;
+    background-position: center center;
+}
+.pucb_r{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.pucbr_a{
+    font-size: 3.5vw;
+    font-weight: bolder;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    flex-grow: 1;
+}
+.pucbrb_setting{
+    flex-grow: 1;
+    text-align: center;
+}
+.pucbr_c{
+    font-size: 4vw;
+    font-weight: bolder;
+}
+
+/*================================================ Desktop*/
+@media(min-width: 769px){/*1024*/
+    .productUserCard{
+        width: 20vw;
+        border-radius: 1vw;
+        padding: 0.7vw;
+        margin: 1vw;
+    }
+    .puc_top{
+        font-size: 1.2vw;
+        padding-bottom: 0.8vw;
+    }
+    .puct_icon{
+        font-size: 1.5vw;
+    }
+    .puc_bottom{
+        padding-top: 0.8vw;
+    }
+    .pucb_l{
+        margin-right: 0.8vw;
+    }
+    .pucbl_img{
+        width: 6vw;
+        height: 6vw;
+    }
+    .puct_l{
+        margin-right: 1vw;
+    }
+    .pucbr_a{
+        font-size: 1.4vw;
+    }
+    .pucbr_c{
+        font-size: 1.5vw;
+    }
+}

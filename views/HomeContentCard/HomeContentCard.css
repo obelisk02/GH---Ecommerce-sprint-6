@@ -1,0 +1,93 @@
+/*================================================ Mobile*/
+.homeContentCard{
+    box-sizing: border-box;
+    width: 30%;
+    min-height: 45vw;
+    border-radius: 3%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 0.8vw;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+    margin-bottom: 3vw;
+    text-decoration: none;
+    color: black;
+}
+.hcc_img{
+    width: 24vw;
+    height: 24vw;
+    background-size: cover;
+    background-position: center center;
+}
+.hcc_price{
+    font-size: 3vw;
+    font-weight: bolder;
+    padding: 0.2vw 0vw;
+    text-align: center;
+    background-color: #E5ECEA;
+    width: 100%;
+}
+.hcc_stars{
+    width: 100%;
+    font-size: 3vw;
+    text-align: center;
+}
+.hcc_sells{
+    width: 100%;
+    font-size: 2.2vw;
+    text-align: center;
+}
+.hcc_name{
+    width: 100%;
+    font-size: 3vw;
+    font-weight: bolder;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0.5vw 0;
+    text-align: center;
+}
+.hcc_button{
+    padding: 0.2vw;
+    width: 100%;
+    font-size: 3vw;
+    border: none;
+    color: white;
+    border-radius: 0.2vw;
+    background-color: #007bff;
+}
+.hcc_button:hover{
+    cursor: pointer;
+    background-color: #0069d9;
+}
+
+/*================================================ Desktop*/
+@media(min-width: 769px){/*1024*/
+    .homeContentCard{
+        width: 15%;
+        min-height: 20vw;
+        margin-bottom: 1vw;
+    }
+    .hcc_img{
+        width: 12vw;
+        height: 12vw;
+    }
+    .hcc_price{
+        font-size: 1vw;
+    }
+    .hcc_stars{
+        font-size: 0.9vw;
+    }
+    .hcc_sells{
+        font-size: 0.8vw;
+    }
+    .hcc_name{
+        font-size: 1vw;
+    }
+    .hcc_button{
+        width: 90%;
+        font-size: 0.9vw;
+    }
+}

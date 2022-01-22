@@ -1,0 +1,27 @@
+<div>
+    <form action="/account/<%= user.id %>?_method=PATCH" method="POST">
+        <label for="firstname">Nombre: </label>
+        <input type="text" name="firstname" id="name" value="<%=user.firstname%>">
+        <br/>
+        <label for="lastname">Apellido: </label>
+        <input type="text" name="lastname" id="lastname" value="<%=user.lastname%>">
+        <br/>
+        <label for="email">Email: </label>
+        <input type="text" name="email" id="email" value="<%=user.email%>">
+        <br/>
+        <label for="password">Contraseña: </label>
+        <input type="text" name="password" id="password" value="<%=user.password%>">
+        <br/>
+        <label for="rol">Rol: </label>
+        <select name="rol" id="rol">
+            <option value="1" <%if(user.rol===1){%>selected<%}%>>Comprador</option>
+            <option value="2" <%if(user.rol===2){%>selected<%}%>>Vendedor</option>
+        </select>
+        <br/>
+        <button type="submit">Actualizar información</button>
+    </form>
+
+    <form action="/account/<%= user.id %>?_method=DELETE" method="POST" onsubmit="return confirm('Realmente desea eliminar esta cuenta');">
+        <button type="submit">Eliminar cuenta</button>
+    </form>
+</div>

@@ -1,0 +1,23 @@
+@media screen and (max-width: 720px) {
+  .NewP-column {
+    /*border: solid; */
+    width: 100%;
+    height: 30vh;
+  }
+
+  .NewP-container {
+    width: 80vw;
+  }
+
+  .NewP-button-delete2 {
+    width: 100%;
+  }
+
+  .NewP-button {
+    width: 100%;
+  }
+
+  .NewP-column {
+    height: 50%;
+  }
+}
